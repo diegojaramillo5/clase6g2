@@ -22,6 +22,13 @@ class Mascota:
         self.__peso=" "
         self.__fecha_ingreso=" "
         self.__lista_medicamentos=[]
+        if m not in self.__lista_medicamentos:
+            medicamento.asignarDosis(dosis)
+            lista_med.append(medicamento)
+            break
+        else:
+            print("Este medicamento ya fue ingresado")
+            continue
         
     def verNombre(self):
         return self.__nombre
